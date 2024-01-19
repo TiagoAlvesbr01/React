@@ -1,26 +1,23 @@
 import React from "react";
-import Headers from './Headers'
-import Article from "./Article";
-import Footer from './Footer'
+import Routes from './routes'
 
-/*function App() {
+function App() {
+ 
   return (
     <div>
-     olá, Tiago
+      <Routes />
     </div>
   );
-}*/
+}
 
-class App extends React.Component{
+/*class App extends React.Component{
   render() {
     return (
       <div>
-        <Headers/>
-        <Article/>
-        <Footer/>
+        
     </div>
     )
   }
-}
+}*/
 
 export default App;
