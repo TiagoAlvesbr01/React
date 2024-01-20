@@ -1,20 +1,20 @@
-import React from 'reat';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import Main from './pages/Main';
 import Contato from './pages/Contato'
 import SobreEmpresa from './pages/SobreEmpresa'
 
-function Routes() {
+function Casa() {
     return(
         <BrowserRouter>
-            <Switch>
-                <Route path="/" exact Component={Main} />
-                <Route path="/sobre-empresa" Component={SobreEmpresa} />
-                <Route path="/contato" Component={Contato} />
-            </Switch>
+            <Routes>
+                <Route path='/' element={<Main />} />
+                <Route path='/sobre-empresa' element={<SobreEmpresa/>} />
+                <Route path='/contato' element={<Contato/>} />
+            </Routes>
         </BrowserRouter>
     )
 }
 
-export default Routes;
+export default Casa;
